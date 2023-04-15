@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/class_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#009BE2"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_class_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:text="展示"
+                />
+            <TextView
+                android:id="@+id/tv_class_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_class_id"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:text="展示"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add_item_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:text="添加"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:background="#00009be2"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/class_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/class_ll1"
+        android:layout_marginTop="40dp"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_checkin"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="20dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/checkin"
+            android:background="#00ffffff"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_homework"
+            android:layout_width="128dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:layout_marginTop="55dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/homework"
+            android:background="#00ffffff"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/class_ll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/class_ll2"
+        >
+
+        <TextView
+            android:id="@+id/tv_class_checkin"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="考勤"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="作业"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/class_ll4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/class_ll2"
+        android:layout_marginTop="35dp"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_grade"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/grade"
+            android:background="#00ffffff"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_comment"
+            android:layout_width="128dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/comment"
+            android:background="#00ffffff"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/class_ll5"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/class_ll4"
+        >
+
+        <TextView
+            android:id="@+id/tv_class_grade"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="成绩"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="评语"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

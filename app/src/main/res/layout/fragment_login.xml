@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/account_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="50dp"
+                android:paddingTop="10dp"
+                android:text="账号："
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/account_et"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_toEndOf="@+id/account_text"
+                android:hint="请输入账号"
+                android:textSize="20sp"
+                android:background="@drawable/et_shape"
+                android:paddingLeft="20sp"
+                android:textColorHint="#778899"
+                android:inputType="textPersonName"
+                android:maxLength="13"
+                android:textColor="#000000"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/password_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="50dp"
+                android:paddingTop="10dp"
+                android:text="密码："
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/password_et"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_toEndOf="@+id/password_text"
+                android:hint="请输入密码"
+                android:textSize="20sp"
+                android:background="@drawable/et_shape"
+                android:paddingLeft="20sp"
+                android:textColorHint="#778899"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textColor="#000000"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/identity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="50dp"
+                android:paddingTop="10dp"
+                android:text="身份："
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/identity_spinner_text"
+                android:layout_width="125dp"
+                android:layout_height="45dp"
+                android:layout_toEndOf="@+id/identity"
+                android:background="@drawable/et_shape"/>
+
+            <Spinner
+                android:id="@+id/identity_spinner"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_toEndOf="@+id/identity"
+                android:textColor="#000000"
+                android:paddingLeft="30dp"
+                android:textSize="20sp"/>
+
+            <View
+                android:id="@+id/identity_spinner_right_item"
+                android:layout_width="20dp"
+                android:layout_height="45dp"
+                android:layout_toEndOf="@+id/identity_spinner"/>
+
+            <CheckBox
+                android:id="@+id/remember_password_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/identity_spinner_right_item"
+                android:text="记住密码"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_marginTop="7dp"
+                android:theme="@style/My_CheckBox"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_shape_blue"
+            android:text="登录"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_shape_red"
+            android:text="家长注册"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+</LinearLayout>

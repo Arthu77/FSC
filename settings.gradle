@@ -1,0 +1,2 @@
+rootProject.name = "FSC"
+include ':app'

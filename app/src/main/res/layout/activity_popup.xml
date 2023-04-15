@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F5F9">
+
+    <Button
+        android:id="@+id/edit_bt_activity"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:text="编辑"
+        android:textSize="18sp"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="2dp"/>
+
+    <Button
+        android:id="@+id/delete_bt_activity"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:text="删除"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

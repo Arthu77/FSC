@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/phone_text"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingTop="10dp"
+            android:text="手机号："
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/phone_et"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@+id/phone_text"
+            android:hint="请输入注册手机号"
+            android:textSize="20sp"
+            android:background="@drawable/et_shape"
+            android:paddingLeft="30sp"
+            android:textColorHint="#778899"
+            android:inputType="textPersonName"
+            android:maxLength="13"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/password_register_text"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingTop="10dp"
+            android:text="密码："
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/password_register_et"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@+id/password_register_text"
+            android:hint="请输入密码"
+            android:textSize="20sp"
+            android:background="@drawable/et_shape"
+            android:paddingLeft="30sp"
+            android:textColorHint="#778899"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/password_register_text_2"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingTop="10dp"
+            android:text="确认密码："
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/password_register_et2"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@+id/password_register_text2"
+            android:background="@drawable/et_shape"
+            android:hint="请再次输入密码"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingLeft="30sp"
+            android:textColor="#000000"
+            android:textColorHint="#778899"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/name_register_text"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingTop="10dp"
+            android:text="姓名："
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/name_register_et"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@+id/name_register_text"
+            android:hint="请输入姓名"
+            android:textSize="20sp"
+            android:background="@drawable/et_shape"
+            android:paddingLeft="30sp"
+            android:textColorHint="#778899"
+            android:maxLength="20"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/student_id_register_text"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingTop="10dp"
+            android:text="学生账号："
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/student_id_register_et"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@+id/name_register_text"
+            android:hint="请输入学生账号"
+            android:textSize="20sp"
+            android:background="@drawable/et_shape"
+            android:paddingLeft="30sp"
+            android:textColorHint="#778899"
+            android:maxLength="20"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+
+    <Button
+        android:id="@+id/register_btn2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_shape_blue"
+        android:text="注册"
+        android:textSize="20sp"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>
